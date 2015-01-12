@@ -1,0 +1,23 @@
+<html>
+<head>
+ <title>nr 4 uppgift</title>
+ <link rel="stylesheet" href="nr4.css"/>
+
+</head>
+  <body>
+  <header><h1>Tid och datum</h1></header>
+    
+  </body>
+</html>
+
+
+
+<?php
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "hejhej";
+fwrite($myfile, $txt);
+
+$d=mktime(11, 14, 54, 8, 12, 2014);
+echo "Created date is " . date("Y-m-d h:i:sa", $d) . "<br>"; 
+echo $_SERVER['HTTP_USER_AGENT']
+?>
