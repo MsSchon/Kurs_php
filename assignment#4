@@ -23,12 +23,12 @@ echo $_SERVER['HTTP_USER_AGENT'];
 
 //Skapa fil
 $my_file = 'file.txt';
-$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-$data = date("Y/m/d \n");
+$handle = fopen($my_file, 'a') or die('Cannot open file:  '.$my_file);
+$data = date("\r\n Y/m/d \r\n");
 fwrite($handle, $data);
-$new_data = date("h:i:sa \n");
+$new_data = date("h:i:sa \r\n");
 fwrite($handle, $new_data);
-$new_data = "\n" . $_SERVER['HTTP_USER_AGENT'];
+$new_data = $_SERVER['HTTP_USER_AGENT'];
 fwrite($handle, $new_data);
 fclose($my_file);
 ?>
