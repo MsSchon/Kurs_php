@@ -1,0 +1,12 @@
+/**define an array of colors
+*$colors = array(
+*  'red'
+*  'green'
+*);
+*save color on pageview
+*save color on click
+*save data to disk
+*read data from disk
+*calculate conversion rate
+*present button for the visitor
+*/
