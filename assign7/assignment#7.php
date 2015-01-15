@@ -1,5 +1,9 @@
-/* skapa en knapp och byt färg på den */
-<?php require_once('button.php'); ?>
+
+<?php 
+require_once('settings.php');
+require_once('button.php');   
+require_once('conversion.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +11,13 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
-  
   <body>
-    <form>
-  <input type="button" class="<?php echo $button->getColor(); ?>" /> 
-      //prints orange white or green to the html markup
+    <div class="content">
+    <form action="." method="post">
+  <input type="submit" value="LÄGG I KORG" name="<?php echo $myButton->getColor(); ?>" class="<?php echo $myButton->getColor(); ?>" /> 
+      <!--prints orange white or green to the html markup --> 
+      </br><p>Tryck på knappen om du vill</br>  <b>eller uppdatera</b> sidan </br>för att få en annan färg</p>
     </form>  
+    </div
   </body>
 </html>

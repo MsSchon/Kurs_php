@@ -1,0 +1,35 @@
+body {
+  margin: 0 auto;
+  background: #eee;
+  width: 80%;
+  padding-top: 40px;
+}
+.value1 {background: pink;}
+.value2 {background: lightblue;}
+.value3 {background: lime;}
+
+input [type="button"] {
+}
+.content {
+  margin-left: 30%;
+  margin-top: 50px;
+  height: 200px;
+  width: 200px;
+}
+input {
+  height: 100px;
+  font-family: Helvetica, Comic Sans MS; 
+  border: 3px solid #EDB4E8;
+  margin-left: 45px;
+  border-radius: 100%;
+}
+form {
+  width: 200px;
+  height: 200px;
+  padding-top: 10px;
+}
+p {
+  margin-left: 11px;
+  color: #000;
+  
+}
