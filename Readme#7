@@ -5,7 +5,7 @@
 *);
 *save color on pageview
 *save color on click
-*save data to disk
+*save data to disk (CSV)
 *read data from disk
 *calculate conversion rate
 *present button for the visitor
