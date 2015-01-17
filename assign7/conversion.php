@@ -1,8 +1,8 @@
 <?php
-/*öka antalet pageviews
+  /*öka antalet pageviews
   *take a value and add 1 to it,
   *@param int $currentCount
-  *retun int */
+  *return int */
   
   function increasePageview($currentCount) 
   {
@@ -21,23 +21,23 @@
   {
     return $clicks / $views;
   }
-$views = 0;
-$clicks = 0;
-$options = 0;
+  $views = 0;
+  $clicks = 0;
+  $options = 0;
 
-$row = $clicks . "," . $views . "," . $options . "\n";
+  $row = $clicks . "," . $views . "," . $options . "\n";
 
-//skicka datan och reloada sidan. 
-if (isset($_POST))
-{
-  header('assignment#7.php');
-}
- /*
+  //skicka datan och reloada sidan. 
+  if (isset($_POST))
+  {
+      
+  }
+  /*
   *Spara resultatet till en CSV-fil. 
   */
- 
-//Öppna och skriv till fil
-$my_file = 'data.csv';
-$handle = fopen($my_file,'w') or die('Cannot open file:  '.$my_file);
-fwrite($handle, $row);
-fclose($handle);
+
+  //Öppna och skriv till fil
+  $my_file = 'data.csv';
+  $handle = fopen($my_file,'w') or die('Cannot open file:  '.$my_file);
+  fwrite($handle, $row);
+  fclose($handle);

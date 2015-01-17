@@ -17,7 +17,7 @@ class MS_Button
   return $options[$randomIndex];
   }
 }
-
+$color = $options[$randomIndex];
 
 $myButton = new MS_Button();
 
