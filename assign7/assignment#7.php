@@ -13,7 +13,7 @@ require_once('conversion.php');
 </head>
   <body>
     <div class="content">
-    <form action="." method="post">
+    <form action="assignment#7.php" method="submit">
   <input type="submit" value="LÄGG I KORG" name="<?php echo $myButton->getColor(); ?>" class="<?php echo $myButton->getColor(); ?>" /> 
       <!--prints orange white or green to the html markup --> 
       </br><p>Tryck på knappen om du vill</br>  <b>eller uppdatera</b> sidan </br>för att få en annan färg</p>

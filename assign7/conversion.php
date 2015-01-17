@@ -27,11 +27,7 @@
 
   $row = $clicks . "," . $views . "," . $options . "\n";
 
-  //skicka datan och reloada sidan. 
-  if (isset($_POST))
-  {
-      
-  }
+
   /*
   *Spara resultatet till en CSV-fil. 
   */
@@ -39,5 +35,19 @@
   //Öppna och skriv till fil
   $my_file = 'data.csv';
   $handle = fopen($my_file,'w') or die('Cannot open file:  '.$my_file);
+  $new_data = "";
+  foreach($options as $key => $value){
+    $clicks = 0 ;
+    $views = 0 ;
+    echo ++$x 
+    $new_data = $new_data . $value . "," . $clicks "," . $views . "\n";
+    
+  }
   fwrite($handle, $row);
   fclose($handle);
+
+  //skicka datan och reloada sidan. 
+  if (isset($_POST['button']))
+  {
+    echo count($key)  
+  }
