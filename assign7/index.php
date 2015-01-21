@@ -2,7 +2,15 @@
 <?php 
 require_once('settings.php');
 require_once('button.php');   
-require_once('conversion.php');
+//require_once('conversion.php');
+
+/*
+* Om man har klickat på knappen så ska det skickas en uppdatering till filen
+*/
+if (array_key_exists('option', $_POST)) {
+     $myButton->trackClick($_POST['option']);
+}
+
 ?>
 <!DOCTYPE html>
 <html>
