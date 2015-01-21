@@ -6,7 +6,7 @@
   
   function increasePageview($currentCount) 
   {
-    return $currentCount +1;
+    return $currentCount+1;
   }
   
   /*
@@ -16,16 +16,16 @@
   *
   *@return float
   */
-  
-  function calculateConversionRate ($clicks, $views)
+
+  function calculateConversionRate($clicks, $views)
   {
     return $clicks / $views;
   }
-  $views = 0;
-  $clicks = 0;
+  $views = 1;
+  $clicks = 1;
   $options = 0;
 
-  $row = $clicks . "," . $views . "," . $options . "\n";
+  $row = $clicks . " clicks," . $views . " views," . $options . "\n";
 
 
   /*
@@ -34,20 +34,8 @@
 
   //Öppna och skriv till fil
   $my_file = 'data.csv';
-  $handle = fopen($my_file,'w') or die('Cannot open file:  '.$my_file);
-  $new_data = "";
-  foreach($options as $key => $value){
-    $clicks = 0 ;
-    $views = 0 ;
-    echo ++$x 
-    $new_data = $new_data . $value . "," . $clicks "," . $views . "\n";
-    
-  }
-  fwrite($handle, $row);
+  $handle = fopen($my_file,'w+') or die('Cannot open file:  '.$my_file);
+  fwrite($handle, $row); 
   fclose($handle);
 
-  //skicka datan och reloada sidan. 
-  if (isset($_POST['button']))
-  {
-    echo count($key)  
-  }
+?>
