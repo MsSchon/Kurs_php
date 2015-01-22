@@ -15,6 +15,7 @@ class MS_Button
     return $options[$randomIndex];
   }
 
+  /*Ska öka antalet */
   function increasePageview($currentCount) {
     return $currentCount+1;
   }
@@ -43,7 +44,7 @@ class MS_Button
   * för att räkna alla klick på knappen
   */
   public function trackClick() {
-    /*    $data = this->loadData();
+    $data = $this->loadData();
     for ($index = 1; $index < count($data); $index++){
       $optionRow = $data[$index];
       $optionData = expolode(',' , $optionRow);
@@ -55,17 +56,17 @@ class MS_Button
       } 
     }
     $this->saveData($data);
-  }*/
+  }
 
     /*
   * för att räkna alla visningar
   */
-    public function trackView(/*$option*/) { /*
-      $data = this->loadData();
+    public function trackView(/*$option*/) { 
+      $data = $this->loadData();
       for ($index = 1; $index < count($data); $index++){
         $optionRow = $data[$index];
         $optionData = expolode(',' , $optionRow);
-        if ($ == $optionData[0]) {
+        if ($option == $optionData[0]) {
           $optionData[2] = $optiondata[2] +1;
           $optionRow = implode(',' , $optionData);
           $data[$index] = $optionRow;
@@ -73,7 +74,7 @@ class MS_Button
       }
       $this->saveData($data);
     }
-    */
+    
     }
   }
 
