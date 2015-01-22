@@ -15,7 +15,7 @@ class MS_Button
     return $options[$randomIndex];
   }
 
-  /*Ska öka antalet */
+  /*Ska räkna antalet sidvisningar */
   function increasePageview($currentCount) {
     return $currentCount+1;
   }
@@ -32,6 +32,9 @@ class MS_Button
     return $clicks / $views;
   }
 
+  /*
+  *Skriv datan tll filen och dela upp på radbryt
+  */
   public function loadData()
   {
     $content = file_get_contents($this->storagePath);
@@ -58,7 +61,7 @@ class MS_Button
     $this->saveData($data);
   }
 
-    /*
+  /*
   * för att räkna alla visningar
   */
     public function trackView(/*$option*/) { 
